@@ -1,0 +1,44 @@
+					-----Data_Set-----
+
+Insatallation of Anaconda
+(https://docs.anaconda.com/anaconda/install/index.html)
+
+Insatallation of Jupyter Notebook
+(https://jupyter.org/install)
+------------------------------------------------------------------------------------------------------
+Downloading the Dataset
+(https://www.cancerimagingarchive.net/nbia-search/?CollectionCriteria=LIDC-IDRI)
+
+Get the manifest file with .tcia extension 
+
+NBIA Data Retriever Download
+(https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images)
+
+Open the manifest file for downloading the data
+------------------------------------------------------------------------------------------------------
+Working Folder/
+├─ Data/
+│  ├─ Image_3D/
+│  ├─ Image_3D_Mask/
+│  ├─ Image_3D_lung_seg/
+│  ├─ Image_3D_lung_seg_mask/
+│  ├─ Image_3D_Norm/
+│  ├─ Image_3D_Mask_Norm/
+│  ├─ meta/
+├─ LIDC-IDRI/
+├─ main_code.py
+├─ utils.py
+├─ lung.conf
+├─ Visualisation.ipynb
+------------------------------------------------------------------------------------------------------
+To Run a .py file the syntax is 
+python file_name.py
+
+Note:
+-> When the pylidc library is installed and executed for first time it creates a pylidc.conf file in the root user folder of the device.
+-> In the pylidc.conf file, the path to the dataset should be provided. 
+-> This may throw error, look for this file and include the proper path.
+-> For Code to run the patient with ID "LIDC-IDRI-0001" should be present in the LIDC-IDRI directory, as the pylidc library demands this requirement for execution.
+------------------------------------------------------------------------------------------------------
+To use the visualisation.ipynb use the Jupyter notebook and run the corresponding cell.
+
